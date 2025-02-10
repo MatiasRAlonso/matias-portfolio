@@ -26,7 +26,6 @@
 </head>
 <body>
     <h1>Matias Rodriguez Alonso Portfolio</h1>
-    <img src="profile.jpg" alt="Your Profile Picture">
     <div class="reports">
         <h2>Power BI Reports</h2>
         <iframe title="Stocks and Exchange rates" width="600" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiOTRkNzRiZjYtYTNkNy00NzEwLThhMDItMmQxY2M2NTU0ZDA4IiwidCI6ImExZjUwYTk3LTIxYzAtNDlhNy1hOWQ0LWYyNDRlYmI0MmRhNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
