@@ -11,15 +11,20 @@
             background: url('body-background.jpg') no-repeat center center fixed;
             background-size: cover;
         }
-        header {
+        .headline-container {
             background: url('headline-background.jpg') no-repeat center center fixed;
             background-size: cover;
-            padding: 50px 0;
+            padding: 100px 0;
             color: white;
         }
         img {
             width: 300px;
             border-radius: 10px;
+        }
+        .content-container {
+            background: url('body-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 20px;
         }
         .reports {
             margin-top: 20px;
@@ -62,15 +67,17 @@
     </style>
 </head>
 <body>
-    <header>
+    <div class="headline-container">
         <h1>Matias Rodriguez Alonso Portfolio</h1>
-    </header>
-    <div class="cv-section">
-        <h2>My CV</h2>
-        <iframe class="cv-preview" src="Matias Rodriguez Alonso.pdf"></iframe>
-        <br>
-        <a class="cv-button" href="Matias Rodriguez Alonso.pdf" download>Download CV</a>
+        <img src="profile.jpg" alt="Your Profile Picture">
     </div>
+    <div class="content-container">
+        <div class="cv-section">
+            <h2>My CV</h2>
+            <iframe class="cv-preview" src="cv.pdf"></iframe>
+            <br>
+            <a class="cv-button" href="cv.pdf" download>Download CV</a>
+        </div>
     <div class="reports">
         <h2>Power BI Reports</h2>
         
