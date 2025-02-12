@@ -8,6 +8,14 @@
         body {
             text-align: center;
             font-family: Arial, sans-serif;
+            background: url('body-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background: url('headline-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 50px 0;
+            color: white;
         }
         img {
             width: 300px;
@@ -16,22 +24,67 @@
         .reports {
             margin-top: 20px;
         }
+        .report {
+            margin-bottom: 40px;
+        }
         iframe {
             width: 800px;
             height: 500px;
             border: none;
-            margin: 20px 0;
+            margin: 10px 0;
+        }
+        h2 {
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 14px;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 10px;
+        }
+        .cv-section {
+            margin-top: 50px;
+        }
+        .cv-preview {
+            width: 600px;
+            height: 800px;
+            border: 1px solid #ccc;
+        }
+        .cv-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Matias Rodriguez Alonso Portfolio</h1>
-    
+    <header>
+        <h1>Matias Rodriguez Alonso Portfolio</h1>
+    </header>
+    <div class="cv-section">
+        <h2>My CV</h2>
+        <iframe class="cv-preview" src="Matias Rodriguez Alonso.pdf"></iframe>
+        <br>
+        <a class="cv-button" href="Matias Rodriguez Alonso.pdf" download>Download CV</a>
+    </div>
     <div class="reports">
         <h2>Power BI Reports</h2>
-        <iframe title="General Dashboard" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYWE0YWRjNjUtMDA4NC00YTgyLWJmYTgtNTA5YmRmYjNlZDg0IiwidCI6ImExZjUwYTk3LTIxYzAtNDlhNy1hOWQ0LWYyNDRlYmI0MmRhNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
-	<iframe title="General Dashboard" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYWE0YWRjNjUtMDA4NC00YTgyLWJmYTgtNTA5YmRmYjNlZDg0IiwidCI6ImExZjUwYTk3LTIxYzAtNDlhNy1hOWQ0LWYyNDRlYmI0MmRhNyIsImMiOjR9&pageName=ReportSection16bed20a1cce0726acac" frameborder="0" allowFullScreen="true"></iframe>
-	<iframe title="Stocks and Exchange rates" width="600" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiOTRkNzRiZjYtYTNkNy00NzEwLThhMDItMmQxY2M2NTU0ZDA4IiwidCI6ImExZjUwYTk3LTIxYzAtNDlhNy1hOWQ0LWYyNDRlYmI0MmRhNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+        
+        <div class="report">
+            <h2>Market series Dashboard</h2>
+            <p>An interactive Power BI Report, where the user can compare any series, analyse ther behaviour and trends.</p>
+            <iframe title="General Dashboard" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYWE0YWRjNjUtMDA4NC00YTgyLWJmYTgtNTA5YmRmYjNlZDg0IiwidCI6ImExZjUwYTk3LTIxYzAtNDlhNy1hOWQ0LWYyNDRlYmI0MmRhNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+	        </div>
+        
+        <div class="report">
+            <h2>Closed market reporr - email</h2>
+            <p>Key financial metrics, aimed to be sent by mail each day at market close.</p>
+            <iframe title="Stocks and Exchange rates" width="600" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiOTRkNzRiZjYtYTNkNy00NzEwLThhMDItMmQxY2M2NTU0ZDA4IiwidCI6ImExZjUwYTk3LTIxYzAtNDlhNy1hOWQ0LWYyNDRlYmI0MmRhNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
     </div>
 </body>
 </html>
